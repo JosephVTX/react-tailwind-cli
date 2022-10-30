@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "Ingrese el nombre de tu nuevo proyecto: "; read argumento
 
