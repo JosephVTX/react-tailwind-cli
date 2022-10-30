@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "Ingrese el nombre de tu nuevo proyecto: "; read pn
+echo "Ingrese el nombre de tu nuevo proyecto: "; read argumento
 
-yarn create vite --template react $pn
+yarn create vite --template react $argumento
 
-cd "$pn"
+cd "$argumento"
 
 yarn add tailwindcss postcss autoprefixer
 npx tailwindcss init -p
