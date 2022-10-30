@@ -12,7 +12,7 @@ pnpm install tailwindcss postcss autoprefixer
 
 npx tailwindcss init -p
 
-rm tailwind.config.cjs
+rm -rf tailwind.config.cjs
 
 echo "/** @type {import('tailwindcss').Config} */" >> tailwind.config.cjs
 echo "module.exports = {" >> tailwind.config.cjs
@@ -26,12 +26,8 @@ echo "  }," >> tailwind.config.cjs
 echo "  plugins: []," >> tailwind.config.cjs
 echo "}" >> tailwind.config.cjs
 
-rm src/index.css
+rm -rf src/index.css
 
 echo "@tailwind base;" >> src/index.css
 echo "@tailwind components;" >> src/index.css
 echo "@tailwind utilities;" >> src/index.css
-
-code .
-
-pnpm dev
