@@ -1,13 +1,12 @@
 #!/bin/bash
 
-echo "Ingrese el nombre de tu nuevo proyecto: "; read argumento
+echo "Ingrese el nombre de tu nuevo proyecto: "; read pn
 
-pnpm create vite --template react $argumento
+yarn create vite --template react $pn
 
-cd "$argumento"
+cd "$pn"
 
-pnpm install tailwindcss postcss autoprefixer
-
+yarn add tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
 rm tailwind.config.cjs
@@ -32,5 +31,5 @@ echo "@tailwind utilities;" >> src/index.css
 
 code .
 
-pnpm install
-
+yarn
+yarn dev
