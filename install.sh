@@ -6,7 +6,10 @@ pnpm create vite --template react $argumento
 
 cd "$argumento"
 
+pnpm install
+
 pnpm install tailwindcss postcss autoprefixer
+
 npx tailwindcss init -p
 
 rm tailwind.config.cjs
@@ -31,5 +34,4 @@ echo "@tailwind utilities;" >> src/index.css
 
 code .
 
-pnpm
 pnpm dev
