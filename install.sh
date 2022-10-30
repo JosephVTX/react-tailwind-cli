@@ -31,3 +31,5 @@ rm -rf src/index.css
 echo "@tailwind base;" >> src/index.css
 echo "@tailwind components;" >> src/index.css
 echo "@tailwind utilities;" >> src/index.css
+
+exit
