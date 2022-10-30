@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "Ingrese el nombre de tu nuevo proyecto: "; read pn
+echo "Ingrese el nombre de tu nuevo proyecto: "; read argumento
 
-pnpm create vite --template react $pn
+pnpm create vite --template react $argumento
 
-cd "$pn"
+cd "$argumento"
 
 pnpm install tailwindcss postcss autoprefixer
 
