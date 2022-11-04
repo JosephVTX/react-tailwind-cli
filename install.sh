@@ -2,7 +2,7 @@
 
 echo "Ingrese el nombre de tu nuevo proyecto: "; read argumento
 
-pnpm create vite --template react $argumento
+pnpm create vite@latest --template react $argumento
 
 cd "$argumento"
 
